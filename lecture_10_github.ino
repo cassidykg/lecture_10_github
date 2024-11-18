@@ -1,5 +1,5 @@
-int ledPin = 32;
-int ledPin2 = 31;
+int ledPin = 28;
+int ledPin2 = 27;
 
 void setup() {
   pinMode(ledPin, OUTPUT);
@@ -7,6 +7,10 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
+  digitalWrite(ledPin, HIGH);
+  digitalWrite(ledPin2, HIGH);
+  delay(500);
+  digitalWrite(ledPin, LOW);
+  digitalWrite(ledPin2, LOW);
+  delay(500);
 }
