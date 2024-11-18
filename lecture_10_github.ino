@@ -10,11 +10,12 @@ void setup() {
 
 void loop() {
   digitalWrite(ledPin, HIGH);
-  digitalWrite(ledPin2, HIGH);
-  digitalWrite(ledPin3, HIGH);
   delay(500);
   digitalWrite(ledPin, LOW);
-  digitalWrite(ledPin2, LOW);
-  digitalWrite(ledPin3, LOW);
+  digitalWrite(ledPin2, HIGH);
   delay(500);
+  digitalWrite(ledPin2, LOW);
+  digitalWrite(ledPin3, HIGH);
+  delay(500);
+  digitalWrite(ledPin3, LOW);
 }
